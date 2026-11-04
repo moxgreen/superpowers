@@ -2,9 +2,19 @@
 
 Claude Code is the reference harness: skills speak its vocabulary
 (`Agent` for a subagent dispatch, todos, `Skill`). These notes cover the
-one place Claude Code can run a plan cheaper than the skills' default
-shape. It is opt-in by your human partner and changes nothing the skills
-require.
+two places Claude Code differs from the skills' default shape: a
+structured question tool, and a cheaper way to run a plan.
+
+## Questions go through AskUserQuestion
+
+Claude Code has `AskUserQuestion`: a question with up to four options,
+each with a label and a line of description, plus a free-text "Other"
+the harness adds on its own. Whenever a skill has you ask your human
+partner something (superpowers:brainstorming above all), ask through
+it, one question per call, with your recommended option first and
+labelled "(Recommended)". They click the option they want or type an
+answer; a wall of numbered questions in text makes them write all the
+answers out by hand.
 
 ## Cheaper orchestration for subagent-driven development
 
