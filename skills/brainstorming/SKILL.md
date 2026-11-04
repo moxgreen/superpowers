@@ -107,17 +107,16 @@ Ask one at a time. Use plain language, pitched just a little above where
 your human partner is. Match their vocabulary; never use process jargon.
 You never need to quote this skill to your human partner.
 
-**Ask through the harness's question tool** when it has one
-(`AskUserQuestion` on Claude Code): one call per question, the message
-before it carrying the context the question needs. A question whose
-choices you can name becomes one option per choice, each with a line on
-what it trades off, your pick first and marked as recommended. A question
-with no nameable choices goes through the tool too, with two options:
-"I'll describe it" and "You decide"; the tool always lets them type
-their own answer, so an open question loses nothing. The tool also takes
-several questions in one call: use that only for a set of independent
-yes/no or pick-one choices the partner has asked to settle in a batch.
-When the harness has no such tool, ask in text, one question per message.
+**Ask through the harness's question tool** whenever the choices can
+be named and the harness has one (`AskUserQuestion` on Claude Code): one
+call per question, the message before it carrying the context the
+question needs, one option per choice with a line on what it trades
+off, your pick first and marked as recommended. The tool always lets
+them type their own answer. A question with no nameable choices is
+asked in text, with nothing to pick from. The tool also takes several
+questions in one call: use that only for a set of independent yes/no or
+pick-one choices the partner has asked to settle in a batch. When the
+harness has no such tool, ask in text, one question per message.
 
 Be clear and concise. Lead with what matters. Avoid jargon. When you
 report what you found, give them the most important findings and offer
@@ -298,7 +297,7 @@ superpowers:writing-plans and no other skill.
 
 | Thought | Reality |
 |---------|---------|
-| "I'll offer a menu of what they might want" | Options steer. Until you know why, the question tool's options are "I'll describe it" and "You decide", nothing else. |
+| "I'll offer a menu of what they might want" | Options steer. Until you know why, ask in text, not through the question tool. |
 | "I'll fill in sensible defaults" | Good. Say them out loud. A default they never heard is one they couldn't reject. |
 | "I've answered their questions, so I'll write the doc" | Lay out the approaches first, in a message of their own (or, when nothing was open from the start, in your first message's short design). |
 | "I should explain the process first" | Ask your question. The process shows itself. |

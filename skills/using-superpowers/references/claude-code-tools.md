@@ -10,11 +10,12 @@ structured question tool, and a cheaper way to run a plan.
 Claude Code has `AskUserQuestion`: a question with up to four options,
 each with a label and a line of description, plus a free-text "Other"
 the harness adds on its own. Whenever a skill has you ask your human
-partner something (superpowers:brainstorming above all), ask through
-it, one question per call, with your recommended option first and
-labelled "(Recommended)". They click the option they want or type an
-answer; a wall of numbered questions in text makes them write all the
-answers out by hand.
+partner something with choices you can name (superpowers:brainstorming
+above all), ask through it, one question per call, with your
+recommended option first and labelled "(Recommended)". They click the
+option they want or type an answer; a wall of numbered questions in
+text makes them write all the answers out by hand. An open question,
+one with nothing to pick from, stays in text.
 
 ## Cheaper orchestration for subagent-driven development
 
